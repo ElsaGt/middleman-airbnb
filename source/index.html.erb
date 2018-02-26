@@ -2,14 +2,105 @@
 title: Le Wagon - Middleman
 ---
 
-<div id="home">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+  <div class="banner-content">
+    <h1>Welcome home</h1>
+    <p>Book unique homes and experience a city like a local.</p>
+    <form class="form-inline">
+<!--       <div class="form-group mb-2">
+        <label for="staticEmail2" class="sr-only">Email</label>
+        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+      </div> -->
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="location" class="sr-only">Where?</label>
+        <input type="location" class="form-control" id="location" placeholder="Where?">
+      </div>
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="when" class="sr-only">When?</label>
+        <input type="when" class="form-control" id="when" placeholder="When?">
+      </div>
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="guests" class="sr-only"></label>
+        <select type="guests" class="form-control" id="guests">
+          <option>Guest 1</option>
+          <option>Guests 2</option>
+          <option>Guests 3</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Search</button>
+    </form>
+  </div>
+</div>
+
+<div class=text-center><h3>Recent flats</h3></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+        <div class="card-category">Popular</div>
+        <div class="card-description">
+          <h2>Sebastien's home</h2>
+          <p>Charming room in Montmartre</p>
+          <div class=rating>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #cacccd"></i>
+          </div>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/ssaunier">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/tokyo');">
+        <div class="card-category">Popular</div>
+        <div class="card-description">
+          <h2>Boris' home</h2>
+          <p>Small flat in Tokyo</p>
+          <div class=rating>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #cacccd"></i>
+            <i class="fa fa-star" style="color: #cacccd"></i>
+          </div>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/papillard">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/london');">
+        <div class="card-category">Popular</div>
+        <div class="card-description">
+          <h2>Romain's home</h2>
+          <p>Nice flat in Picadilly</p>
+          <div class=rating>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+          </div>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/monsieurpaillard">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div id="home">
   <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
+    <%#= image_tag "logo.png", width: "200" %>
     <p>
       Middleman is now running!
     </p>
     <p class="about">
-      <%= link_to "More about this template", "about.html" %>
+      <%#= link_to "More about this template", "about.html" %>
     </p>
   </div>
-</div>
+</div> -->
